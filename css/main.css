@@ -1,0 +1,628 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff");
+  src: url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff");
+  src: url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+button:hover, input:hover, a:hover, textarea:hover {
+  text-decoration: none;
+}
+
+button:focus, input:focus, a:focus, textarea:focus {
+  outline: none;
+}
+
+section {
+  padding: 10rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.form {
+  background-color: #fff;
+  padding: 5rem 7rem;
+  text-align: center;
+}
+
+.form__header {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.form__header strong {
+  font-size: 1.7rem;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.form label {
+  padding: 0.5rem;
+  position: absolute;
+  left: 50%;
+  font-size: 1.3rem;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  white-space: nowrap;
+}
+
+.form small {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form__btn {
+  display: block;
+  height: 5.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0;
+}
+
+.phone-link {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a1820;
+  text-align: right;
+  display: block;
+  white-space: nowrap;
+}
+
+.button {
+  background: #b47603;
+  color: #ffffff;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  padding: 2rem 3rem;
+  display: block;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button:hover {
+  background: #46b814;
+  cursor: pointer;
+}
+
+.main {
+  padding: 3rem 0 10rem 0;
+  background: url(http://www.gauzeee.ru/practice/n14/img/bg-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.main-content {
+  margin-top: 10rem;
+}
+
+.main-content h1 {
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  font-family: "Proxima Nova Bold", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.45;
+}
+
+.main-subtitle {
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+}
+
+.main-title span {
+  display: inline-block;
+  padding: 3rem 4rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #46b814;
+}
+
+.main-title span strong {
+  font-size: 3rem;
+  font-weight: "Proxima Nova Bold", sans-serif;
+}
+
+.main-trigger {
+  margin-top: 3rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Bold", sans-serif;
+  display: block;
+  margin-left: 5px;
+}
+
+.section-header {
+  text-align: center;
+  margin: 2rem 0 10rem 0;
+}
+
+.section-header__light {
+  color: #ffffff;
+  margin: 0;
+}
+
+.section-header h2 {
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+
+.section-header p {
+  font-size: 1.4rem;
+}
+
+.features-block {
+  text-align: center;
+}
+
+.features-block h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.features-block p {
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 90%;
+}
+
+.features-img {
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.slick-active {
+  outline: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 20px;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  z-index: 99;
+}
+
+.pre {
+  background: url(../img/arrow-left.svg) no-repeat center;
+  background-size: 70%;
+  left: 0;
+}
+
+.next {
+  background: url(../img/arrow-right.svg) no-repeat center;
+  background-size: 70%;
+  right: 0;
+}
+
+.price {
+  background: #46b814 url(http://www.gauzeee.ru/practice/n7/img/prices/prices-bg.jpg) center;
+}
+
+.price-block {
+  background-color: #ffffff;
+  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  padding: 1rem 3rem 3rem;
+  min-height: 50rem;
+  margin-top: 10rem;
+}
+
+.price-block h4 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin: 3rem 0;
+}
+
+.price-block img {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.price-list {
+  min-height: 14rem;
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 0;
+}
+
+.price-list li:before {
+  content: "";
+  display: inline-block;
+  margin-right: 1rem;
+  width: 13px;
+  height: 13px;
+  background: url(http://www.gauzeee.ru/practice/n7/img/prices/ico.png) center center;
+  background-size: cover;
+}
+
+.price-tag {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.price-btn {
+  width: 70%;
+  margin: 0 auto;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.price-collapse {
+  display: none;
+  font-size: 1.6rem;
+}
+
+.price-collapse a.collapsed {
+  color: black;
+}
+
+.feedback {
+  position: relative;
+  background: #fff url(http://www.gauzeee.ru/practice/n7/img/feedback/feedback-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.feedback-prev-btn {
+  left: -4rem;
+}
+
+.feedback-next-btn {
+  right: -4rem;
+}
+
+.feedback-slider {
+  background-color: #ffffff;
+  -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+  padding: 5rem 6rem;
+}
+
+.feedback-slider .media {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+
+.feedback-slider .media h5 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.feedback-slider p {
+  font-size: 1.7rem;
+}
+
+.feedback-slider-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4rem;
+  height: 5rem;
+  background-color: #46b814;
+  border: none;
+}
+
+.feedback-slider-btn img {
+  width: 50%;
+}
+
+.feedback-text {
+  font-style: italic;
+  padding: 1rem;
+  border: 2px solid #46b814;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.feedback-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2rem;
+  left: 5rem;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #46b814;
+  background-color: #fff;
+  border-bottom: none;
+  border-top-right-radius: 100%;
+}
+
+.feedback-form {
+  padding: 4rem 5rem;
+  text-align: center;
+}
+
+.feedback-form h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.feedback-form__btn {
+  max-width: 20rem;
+  margin: auto;
+}
+
+.feedback-bg {
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  max-width: 20%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-form {
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.popup-close {
+  position: absolute;
+  top: -1.65rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 2rem 4rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.popup-content p {
+  margin: 1rem;
+}
+
+.popup-header {
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+}
+
+@media (max-width: 1199px) {
+  .main-form {
+    padding: 5rem 2rem;
+  }
+  .popup-form {
+    padding: 0;
+  }
+  .header .btn-header {
+    font-size: 1rem;
+  }
+  .feedback-form {
+    padding: 3rem 0.5rem;
+  }
+  .feedback-bg {
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 12px;
+  }
+  .button {
+    margin-top: 2rem;
+  }
+  .main {
+    background-position: top right;
+  }
+  .main-title {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .main-title span {
+    padding: 1rem 10rem;
+  }
+  .price-block {
+    padding: 1rem 0 2rem;
+  }
+  .price-header-btn {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .feedback-form .form {
+    padding: 2rem 0;
+  }
+  .feedback-form .form label {
+    -webkit-transform: translate(-50%, 6px);
+            transform: translate(-50%, 6px);
+  }
+  .feedback-bg {
+    display: none;
+  }
+  .section-header {
+    margin: 2rem 0 5rem 0;
+  }
+  .fotorama {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    background-position: top left;
+  }
+  .main-content h1 {
+    font-size: 2.6rem;
+  }
+  .main-subtitle {
+    font-size: 1.7rem;
+  }
+  .header {
+    text-align: center;
+  }
+  .phone-link {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .feedback-prev-btn {
+    left: 0;
+  }
+  .feedback-next-btn {
+    right: 0;
+  }
+}
+
+@media (max-width: 524px) {
+  .button {
+    font-size: 1rem;
+    padding: 1rem 4rem;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-content h1 {
+    font-size: 1.6rem;
+  }
+  .main-title span {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+  .main-form {
+    padding: 1rem;
+  }
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  .price-header-btn {
+    white-space: pre-wrap;
+  }
+  .price-collapse {
+    display: block;
+  }
+  .price-list-top {
+    display: none;
+  }
+  .price-list {
+    min-height: 100%;
+  }
+  .price-block {
+    min-height: 0;
+  }
+  .popup-form {
+    margin: 1rem;
+  }
+  .popup-form__input {
+    margin: 0;
+  }
+  .popup-form label {
+    position: relative;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .popup-close {
+    right: 1rem;
+    top: 0;
+    color: #000;
+  }
+  .feedback-slider {
+    padding: 3rem 4.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-content h1 {
+    font-size: 1.2rem;
+  }
+  .main-title span {
+    font-size: 1rem;
+  }
+  .main-subtitle {
+    font-size: 1.2rem;
+  }
+  .main-form__input {
+    margin: 3rem 0;
+  }
+  .button {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+  .popup-form {
+    margin: 1rem;
+  }
+  .popup-form__input {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

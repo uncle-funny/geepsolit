@@ -1,0 +1,355 @@
+@import "var"
+@import "fonts"
+
+/// SPECIFICATION 
+
+html
+    font-size: 10px
+
+body 
+    font-family: $reg
+    
+button, input, a, textarea
+    &:hover
+        text-decoration: none
+    &:focus
+        outline: none
+
+section
+    padding: 10rem 0
+
+img
+    max-width: 100%
+
+    ///оформление форм\\\\
+
+.form
+    background-color: #fff
+    padding: 5rem 7rem
+    text-align: center
+    &__header
+        font-size: 1.5rem
+        margin-bottom: 4rem
+        strong
+            font-size: 1.7rem
+    &__input
+        display: block
+        width: 100%
+        padding: 1.5rem
+        font-size: 1.5rem
+        margin: 2rem 0
+        border: 1px solid $border-input
+        border-radius: 5px
+    label
+        padding: 0.5rem
+        position: absolute
+        left: 50%
+        font-size: 1.3rem
+        transform: translateX(-50%) translateY(-50%)
+        background-color: #fff
+        white-space: nowrap
+    small
+        display: block
+        margin-top: 1.5rem
+        font-size: 0.9rem
+    textarea
+        resize: none
+    &__btn
+        display: block
+        height: 5.5rem
+        width: 100%
+        font-size: 1.6rem  
+        padding: 0 
+
+///////////////////////// HEADER \\\\\\\\\\\\\\\\\\\\\\\\
+    
+.phone-link
+    font-size: 2rem
+    font-weight: bold
+    color: $text
+    text-align: right 
+    display: block
+    white-space: nowrap
+
+.button
+    background: $btn-color
+    color: $white
+    width: 100%
+    white-space: nowrap
+    font-size: 1.2rem
+    padding: 2rem 3rem
+    display: block
+    border-radius: 8px
+    text-transform: uppercase
+    border: none
+    transition: .3s
+    &:hover
+        background: $icons-color
+        cursor: pointer
+
+///////////////////////// EMD HEADER \\\\\\\\\\\\\\\\\\\\\\\\
+
+///////////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\
+.main
+    padding: 3rem 0 10rem 0
+    background: url(http://www.gauzeee.ru/practice/n14/img/bg-1.jpg) no-repeat center center
+    background-size: cover
+    &-content
+        margin-top: 10rem
+        h1 
+            margin-bottom: 4rem
+            font-size: 4rem
+            font-family: $bold
+            text-transform: uppercase
+            line-height: 1.45
+    &-subtitle
+        margin-bottom: 4rem
+        font-size: 2.4rem
+    &-title
+        span
+            display: inline-block
+            padding: 3rem 4rem
+            font-size: 1.8rem
+            color: $white
+            text-align: center
+            background-color: $icons-color
+            strong
+                font-size: 3rem
+                font-weight: $bold
+    &-trigger
+        margin-top: 3rem
+        font-size: 2.2rem
+        text-transform: uppercase
+        font-family: $bold
+        display: block
+        margin-left: 5px
+    
+        
+
+
+///////////////////// END MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
+
+///////////////////// FEATURES \\\\\\\\\\\\\\\\\\\\\\\\\ 
+
+.section-header    
+    text-align: center
+    margin: 2rem 0 10rem 0 
+    &__light
+        color: $white
+        margin: 0
+    h2
+        font-weight: bold
+        font-size: 3.6rem  
+    p
+        font-size: 1.4rem
+    
+   
+   
+.features
+    &-block
+        text-align: center
+        h3
+            font-size: 2rem
+            font-weight: bold
+            margin-bottom: 3rem
+        p
+            font-size: 1.5rem
+            display: inline-block
+            width: 90%
+    &-img 
+        height: 8rem;
+        margin-bottom: 3rem;
+        img
+            display: block
+            margin: 0 auto    
+
+.slick-active
+    outline: none
+.arrow
+    position: absolute 
+    top: 20px
+    width: 2rem
+    height: 2rem
+    border: none
+    z-index: 99
+.pre
+    background: url(../img/arrow-left.svg) no-repeat center
+    background-size: 70%
+    left: 0
+.next
+    background: url(../img/arrow-right.svg) no-repeat center
+    background-size: 70%
+    right: 0
+
+///////////////////////  END FEATURES  \\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+    
+///////////////////////  PRICES  \\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.price
+    background: $icons-color url(http://www.gauzeee.ru/practice/n7/img/prices/prices-bg.jpg) center 
+    &-block
+        background-color: $white
+        box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17)
+        text-align: center
+        padding: 1rem 3rem 3rem
+        min-height: 50rem
+        margin-top: 10rem
+        h4
+            font-size: 1.9rem
+            font-weight: bold
+            margin: 3rem 0
+        img
+            display: inline-block
+            margin-bottom: 2rem
+    &-list
+        min-height: 14rem
+        list-style: none
+        font-size: 1.6rem
+        line-height: 1.6
+        padding: 0
+        li
+            &:before
+                content: ""
+                display: inline-block
+                margin-right: 1rem
+                width: 13px
+                height: 13px
+                background: url(http://www.gauzeee.ru/practice/n7/img/prices/ico.png) center center
+                background-size: cover
+    &-tag
+        font-size: 1.9rem
+        font-weight: bold
+        margin-bottom: 1rem
+        display: block
+    &-btn
+        width: 70%
+        margin: 0 auto
+        font-weight: bold
+        letter-spacing: 1px
+    &-collapse
+        display: none
+        font-size: 1.6rem
+        a.collapsed
+            color: black
+
+///////////////////////  END PRICES  \\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+///////////////////////  FEEDBACK  \\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.feedback    
+    position: relative
+    &-prev-btn
+        left: -4rem
+    &-next-btn
+        right: -4rem
+    background: #fff url(http://www.gauzeee.ru/practice/n7/img/feedback/feedback-bg.jpg) no-repeat center
+    background-size: cover
+    &-slider
+        background-color: $white
+        box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11)
+        padding: 5rem 6rem
+        
+        .media
+            margin-top: 3rem
+            font-size: 1.4rem
+            h5
+                font-weight: bold
+                font-size: 1.4rem
+        p
+            font-size: 1.7rem
+        &-btn
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            width: 4rem
+            height: 5rem
+            background-color: $icons-color
+            border: none
+            img
+                width: 50%
+    &-text
+        font-style: italic
+        padding: 1rem
+        border: 2px solid $icons-color
+        margin-top: 2rem
+        position: relative
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            top: -2rem
+            left: 5rem
+            width: 2rem
+            height: 2rem
+            border: 2px solid $icons-color
+            background-color: #fff
+            border-bottom: none
+            border-top-right-radius: 100%
+    &-form
+        padding: 4rem 5rem
+        text-align: center  
+        h3
+            font-size: 2.2rem
+            font-weight: bold     
+        &__btn
+            max-width: 20rem
+            margin: auto
+    &-bg
+        position: absolute
+        bottom: 0
+        left: 8%
+        max-width: 20%
+
+
+    
+///////////////////////  END FEEDBACK  \\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+///////////////////////  MODAL WINDOWS  \\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.popup
+    display: none
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+    background-color: rgba(0, 0, 0, .5)
+    &-form
+        margin-top: 3rem
+        padding: 0
+    &-close
+        position: absolute
+        top: -1.65rem  
+        right: -2rem
+        width: 2rem
+        text-align: center
+        border: none
+        background-color: transparent
+        font-size: 3rem
+        color: $white
+    &-content
+        position: fixed
+        left: 50%
+        top: 10%
+        transform: translateX(-50%)
+        padding: 2rem 4rem
+        background-color: $white
+        text-align: center
+        p
+            margin: 1rem
+    &-header
+        font-weight: bold
+
+/////// Collapse  \\\\\\\\\       
+
+.card
+    border: none 
+
+///////////////////  MEDIA  \\\\\\\\\\\\\\\\\\\\\\
+
+@import 'media'
